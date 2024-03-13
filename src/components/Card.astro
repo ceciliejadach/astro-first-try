@@ -2,11 +2,12 @@
 // const header = Astro.props.header;
 // const text = Astro.props.text;
 
-const {header} = Astro.props;
+const {header,soldOut} = Astro.props;
 ---
 
 <article>
     <h2>{header}</h2>
+{soldOut && <p>UDSOLGT</p> }
     <p>Kortere lorem ipsum</p>
     <slot />
 </article>
